@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="blog-list-container">
+    <ul>
+      <li *ngFor="let blog of blogs" (click)="onBlogEntrySelected(blog)" title="{{blog.title}}">
+        <div class="blog-item">{{blog.title}}</div>
+        <i *ngIf="blog.favorite" class="fa fa-heart"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="blog-detail-container">
+    <one-blog-detail [blog]="selectedBlog"></one-blog-detail>
+  </div>
+</div>

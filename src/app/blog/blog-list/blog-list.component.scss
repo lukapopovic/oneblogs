@@ -1,0 +1,49 @@
+.main-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+
+    .blog-list-container {
+        flex: 0 0 350px;
+        height: 600px;
+        border: 1px solid #000;
+        padding: 10px;
+        min-height: 0px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-weight: 700;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                padding: 5px;
+                cursor: pointer;
+
+                .blog-item {
+                    display: inline-block;
+                    width: 300px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                i {
+                    position: relative;
+                    top: -2px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            li:nth-child(even) {background: #CCC}
+            li:nth-child(odd) {background: #FFF}
+        }
+    }
+
+    .blog-detail-container {
+        flex: 2 2 auto;
+        border: 1px solid #000;
+        padding: 20px 30px;
+    }
+}

@@ -1,0 +1,4 @@
+<h2 class="welcome-message" *ngIf="!blog">{{welcomeMessage}}</h2>
+<h2>{{blog?.title}}</h2>
+<p>{{blog?.body}}</p>
+<button *ngIf="blog" class="fav-button" (click)="onFavBlogEntry(blog)">Favorite <i class="fa fa-heart"></i></button>

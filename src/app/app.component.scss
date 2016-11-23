@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    h1 {
+        width: 80%;
+        flex: 0 0 50px;
+        text-align: left;
+    }
+
+    .container {
+        width: 80%;
+        flex: 1 1 auto;
+    }
+}
